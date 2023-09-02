@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Kablammo&family=Lexend:wght@300&family=Montserrat:wght@300;400&family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Henri</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+    
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <section class="shadow-lg shadow-gray-300 rounded-lg p-4 flex flex-col" style="max-width: 40%; ">
+        <div class="border-b border-green-400 flex items-center justify-between" style="min-width: 30vw;">
+            <h1 class="uppercase font-bold text-green-400 text-lg hover:translate-x-2 duration-500 cursor-pointer ">todolist</h1>
+            <i class="fa-solid fa-ellipsis-vertical text-gray-400 menu_btn "></i>
+        </div>
+        <div class=" flex flex-col justify-center items-center mt-2  h-7  ">
+            <div class="menu_toogle_div border-green-400 rounded-lg border w-full hidden  justify-center items-center ">
+                <p class="hidden text-green-400 Inscription_button cursor-pointer">Inscription</p>
+                <p class=" text-green-400 Connexion_button cursor-pointer">Connexion</p>
+            </div>
+           
+
+           <script>
+            $(function(){
+                $('.menu_btn').click(function(){
+                    $('.menu_toogle_div').toggleClass('hidden flex');
+                });
+            });
+           </script>
+        </div>
+
+        <div>
+            <form action="#">
+                
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>
